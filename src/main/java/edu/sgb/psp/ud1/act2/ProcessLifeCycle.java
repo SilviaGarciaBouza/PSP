@@ -70,6 +70,7 @@ public class ProcessLifeCycle {
            Instant end3= Instant.now();
            Duration diff3= Duration.between(start3, end3);
            System.out.println("Proceso 3: Tiempo de ejecución: " + diff.toMillis());
+           //usar el isAlive
        }
        catch (Exception e) {
            System.out.println(e.getMessage());
