@@ -21,7 +21,7 @@ public class act6 {
             Process process= pb.start();
             // Captura y guarda la salida del comando "tasklist" en una List
             List<String> outputLines = getProcessOutputLines(process);
-            outputLines.stream().filter(e->e.contains(comand)).forEach(e-> System.out.println(e));
+            outputLines.forEach(e-> System.out.println(e));
 
             // TODO: Muestra solo que se desea mostrar (aplicando el filtro)
         } catch (Exception e) {

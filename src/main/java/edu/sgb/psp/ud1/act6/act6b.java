@@ -2,7 +2,6 @@ package edu.sgb.psp.ud1.act6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.time.Instant;
 import java.util.List;
 import java.util.Scanner;
@@ -14,14 +13,11 @@ public class act6b {
             System.out.println("Escribe el nombre del proceso: ");
             String comand = sc.nextLine();
             // TODO: Crea el proceso para ejecutar "tasklist" y lánzalo
-
-            ProcessBuilder pb = new ProcessBuilder("tasklist", "/v" );
             // pb.inheritIO();
             Instant start= Instant.now();
             Process process= pb.start();
             // Captura y guarda la salida del comando "tasklist" en una List
             List<String> outputLines = getProcessOutputLines(process);
-            outputLines.stream().filter(e->e.contains(comand)).forEach(e-> System.out.println(e));
 
             // TODO: Muestra solo que se desea mostrar (aplicando el filtro)
         } catch (Exception e) {
