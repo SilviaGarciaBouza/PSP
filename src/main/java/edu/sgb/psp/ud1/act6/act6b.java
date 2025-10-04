@@ -15,9 +15,9 @@ public class act6b {
             // TODO: Crea el proceso para ejecutar "tasklist" y lánzalo
             // pb.inheritIO();
             Instant start= Instant.now();
-            Process process= pb.start();
+       //     Process process= pb.start();
             // Captura y guarda la salida del comando "tasklist" en una List
-            List<String> outputLines = getProcessOutputLines(process);
+         //   List<String> outputLines = getProcessOutputLines(process);
 
             // TODO: Muestra solo que se desea mostrar (aplicando el filtro)
         } catch (Exception e) {
