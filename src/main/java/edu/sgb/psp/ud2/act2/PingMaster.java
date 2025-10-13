@@ -9,7 +9,7 @@ public class PingMaster {
         thread1.start();
         thread2.start();
 
-        //esperar a q termine?
+        //esperar a q termine?hacer y probar
         try {
             thread1.join();
             thread2.join();
