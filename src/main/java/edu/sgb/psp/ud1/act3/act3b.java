@@ -26,7 +26,6 @@ public class act3b {
             p.waitFor();
 
         }catch (Exception e){
-            e.printStackTrace();
         }
 
 
@@ -40,7 +39,7 @@ public class act3b {
           //  pb.redirectError(new File("error.txt"));
             Process p = pb.start();
            p.waitFor();
-            System.out.println("Código de salida: " + exitCode);
+            System.out.println("Código de salida: " );
         }catch (Exception e){
             e.printStackTrace();
         }
