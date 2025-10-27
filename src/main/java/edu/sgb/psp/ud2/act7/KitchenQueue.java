@@ -3,7 +3,7 @@ package edu.sgb.psp.ud2.act7;
 import java.util.Queue;
 
 public class KitchenQueue {
-   private Queue<String> queue;
+   private Queue<String> queue;//aqui no se inicializa pq
   private int  capacity;
 
     public KitchenQueue(Queue<String> queue, int capacity) {

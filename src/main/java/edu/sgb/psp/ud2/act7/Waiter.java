@@ -14,11 +14,8 @@ public class Waiter implements Runnable{
             do{
             kc.takeDish();
             Thread.sleep(3000);}
-            while(!kc.getQueue().isEmpty());
+            while(true);//Roi puso un bucle infinito con While(true)!kc.getQueue().isEmpty(
         } catch (InterruptedException e) {
-
-
-
 
         }
     }

@@ -5,9 +5,10 @@ import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        Queue<String > queue= new LinkedList<>();
-        KitchenQueue kc= new KitchenQueue(queue, 5);
-        Thread chef= new Thread(new Chef(kc,6));
+        Queue<String > queue= new LinkedList<String>();
+        KitchenQueue kc= new KitchenQueue(queue, 2);
+
+        Thread chef= new Thread(new Chef(kc,8236));
         Thread waiter= new Thread(new Waiter(kc));
 
         chef.start();
@@ -15,6 +16,8 @@ public class Main {
 
         chef.join();
         waiter.join();
+
+        System.out.println("Se terminó");
     }
 
 }

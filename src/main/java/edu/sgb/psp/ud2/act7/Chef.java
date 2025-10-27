@@ -14,6 +14,7 @@ public class Chef implements Runnable{
         for(int i=0; i<numDishes;i++){
             try {
                 kc.putDish("Plato"+i);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
