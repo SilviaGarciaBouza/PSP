@@ -1,0 +1,9 @@
+{
+  "Top 5 palabras más frecuentes": [
+    {"top": 1, "palabra": "a", "frecuencia": 11},
+    {"top": 2, "palabra": "he", "frecuencia": 11},
+    {"top": 3, "palabra": "george", "frecuencia": 10},
+    {"top": 4, "palabra": "the", "frecuencia": 9},
+    {"top": 5, "palabra": "and", "frecuencia": 9}
+  ]
+}
