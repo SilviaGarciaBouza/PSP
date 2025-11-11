@@ -21,7 +21,7 @@ public class TaskManager {
         threadReporter.start();
         try {
             threadReporter.join(6000);
-            threadProcessor.interrupt();
+            threadReporter.interrupt();
             System.out.println("[Main] Reporter is too slow, interrupting...");
             System.out.println("[Reporter] Interrupted!");
         }catch (InterruptedException e){

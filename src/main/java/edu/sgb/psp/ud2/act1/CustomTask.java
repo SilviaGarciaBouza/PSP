@@ -12,7 +12,7 @@ public class CustomTask implements Runnable{
     @Override
     public void run() {
         System.out.println("Empieza la ejecución de la tarea." +
-                "\nDuracion: "+this.duration+" milisegundos");
+                "Duracion: "+this.duration+" milisegundos");
         try {
             Thread.sleep(this.duration);
         } catch (InterruptedException e) {
