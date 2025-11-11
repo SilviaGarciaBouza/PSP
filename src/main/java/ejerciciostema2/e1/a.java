@@ -3,7 +3,7 @@ package ejerciciostema2.e1;
 import edu.sgb.psp.ud2.act5.BankAccount;
 import edu.sgb.psp.ud2.act5.Client;
 import edu.sgb.psp.ud2.act7.Chef;
-
+/*
 import java.util.Queue;
 import java.util.Random;
 
@@ -15,7 +15,7 @@ class KiQ {
     void putDish(String d, Chef c) {
 
             while(q.size()== capacity){
-                c.wait();
+                ///c.wait();
             }
             q.add(d);
             notifyAll();
@@ -68,11 +68,11 @@ for (int i=0; i<6;i++){
 class m{
     public static void main(String[] args) {
         KiQ k = new KiQ();
-        Chef c = new Chef(k, "Plato");
-        Waiter w = new Waiter(k, "Plato");
-        Thread t1 = new Thread(c);
-        Thread t2 = new Thread(w);
-        t1.start();
-        t2.start();
+     //   Chef c = new Chef(k, "Plato");
+     //   Waiter w = new Waiter(k, "Plato");
+      //  Thread t1 = new Thread(c);
+      //  Thread t2 = new Thread(w);
+      //  t1.start();
+      //  t2.start();
     }
-}
+}*/
